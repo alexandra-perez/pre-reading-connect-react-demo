@@ -22,8 +22,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/colors" element={<Index />} />
             <Route path="/colors/new" element={<New />} />
-            <Route path="/colors/:index" element={<Show />} />
-            <Route path="/colors/:index/edit" element={<Edit />} />
+            <Route path="/colors/:id" element={<Show />} />
+            <Route path="/colors/:id/edit" element={<Edit />} />
             <Route path="*" element={<FourOFour />} />
           </Routes>
         </main>
@@ -33,3 +33,11 @@ function App() {
 }
 
 export default App;
+
+// Frontend           Backend
+// -------------------------------
+// Index              Index
+// Show               Show
+// New                Create
+// Edit               Update
+// Delete (button)    Destroy
